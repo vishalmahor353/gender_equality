@@ -1,20 +1,21 @@
-<div class="form">
-  <div class="title">Welcome</div>
-  <div class="subtitle">Let's create your account!</div>
-  <div class="input-container ic1">
-    <input id="firstname" class="input" type="text" placeholder=" " />
-    <div class="cut"></div>
-    <label for="firstname" class="placeholder">First name</label>
-  </div>
-  <div class="input-container ic2">
-    <input id="lastname" class="input" type="text" placeholder=" " />
-    <div class="cut"></div>
-    <label for="lastname" class="placeholder">Last name</label>
-  </div>
-  <div class="input-container ic2">
-    <input id="email" class="input" type="text" placeholder=" " />
-    <div class="cut cut-short"></div>
-    <label for="email" class="placeholder">Email</label>
-  </div>
-  <button type="text" class="submit">submit</button>
+<div class="wrapper">
+  <h2>Login</h2>
+  <form action="#">
+    <div class="input-box">
+      <input type="text" placeholder="Enter your email" required />
+    </div>
+    <div class="input-box">
+      <input type="password" placeholder="Enter password" required />
+    </div>
+    <div class="policy">
+      <input type="checkbox" />
+      <h3>I accept all terms & condition</h3>
+    </div>
+    <div class="input-box button">
+      <input type="Submit" value="Login" />
+    </div>
+    <div class="text">
+      <h3>Don't have an account? <a routerLink="/register">Register now</a></h3>
+    </div>
+  </form>
 </div>
