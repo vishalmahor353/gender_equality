@@ -8,4 +8,8 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent {
   constructor(private router: Router) {}
+
+  isActive(route: string): boolean {
+    return this.router.url === route;
+  }
 }

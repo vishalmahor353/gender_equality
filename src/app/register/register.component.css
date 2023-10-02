@@ -146,3 +146,7 @@ form .text h3 a:hover {
     font-size: 15px;
   }
 }
+
+.validate-message::placeholder {
+  color: red;
+}

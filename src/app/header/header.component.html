@@ -8,26 +8,44 @@
     <!-- <svg class="bi me-2" width="40" height="32">
       <use xlink:href="#bootstrap"></use>
     </svg> -->
-    <span class="fs-4" routerLink="/home">Simple header</span>
+
+    <img
+      class="bg-light"
+      width="50"
+      height="50"
+      src="assets/images/gender-equality.png"
+    />
+    <span class="fs-4" routerLink="/home">Gender Equality</span>
   </a>
 
   <ul class="nav nav-pills">
     <li class="nav-item">
-      <a routerLink="/home" class="nav-link text-light" aria-current="page"
+      <a
+        routerLink="/home"
+        class="nav-link text-light"
+        aria-current="page"
+        [class.active]="isActive('/home')"
         >Home</a
       >
     </li>
     <li class="nav-item">
-      <a routerLink="/features" class="nav-link text-light">Features</a>
+      <a
+        routerLink="/features"
+        class="nav-link text-light"
+        [class.active]="isActive('/features')"
+        >Features</a
+      >
     </li>
     <li class="nav-item">
-      <a href="#" class="nav-link text-light">Pricing</a>
+      <a href="#" class="nav-link text-light">Donate</a>
     </li>
     <li class="nav-item">
       <a href="#" class="nav-link text-light">FAQs</a>
     </li>
     <li class="nav-item">
-      <a routerLink="/login" class="nav-link text-light">Login/Register</a>
+      <button type="button" class="btn btn-primary" routerLink="/login">
+        Login
+      </button>
     </li>
   </ul>
 </header>

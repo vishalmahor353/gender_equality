@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { FeatureComponent } from './feature/feature.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,7 @@ import { RegisterComponent } from './register/register.component';
     HeaderComponent,
     FooterComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, NgbModule],
+  imports: [BrowserModule, AppRoutingModule, NgbModule, ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
