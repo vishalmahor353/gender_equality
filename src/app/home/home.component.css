@@ -1,0 +1,148 @@
+.slider-area {
+  height: calc(100vh - 154px);
+  position: relative;
+  /* overflow: hidden; */
+}
+.banner-content,
+.single-slide,
+.slider-wrapper .owl-item,
+.slider-wrapper .owl-stage,
+.slider-wrapper,
+.slider-wrapper .owl-stage-outer,
+.banner-content .container,
+.banner-content .row,
+.banner-content .col-lg-8,
+.banner-content .col-md-12,
+.banner-content .col-lg-7,
+.banner-content .text-content-wrapper,
+.banner-content .text-content,
+.banner-content .display-table,
+.banner-content .display-table-cell {
+  height: 100%;
+}
+.banner-content .text-content {
+  display: table-cell;
+  height: auto;
+  position: relative;
+  vertical-align: middle;
+  z-index: 2;
+}
+.text-content h1 {
+  animation-delay: 1s;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: fadeIn;
+  color: #ffffff;
+  font-size: 72px;
+  font-weight: bold;
+  line-height: 71px;
+  margin-bottom: 21px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  color: #3e3e3e;
+}
+.text-content h1 div {
+  color: #fc2c62;
+}
+
+.text-content p {
+  animation-delay: 1.5s;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: fadeIn;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+  margin-bottom: 35px;
+  max-width: 593px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 29px;
+}
+
+.banner-btn .default-btn {
+  animation-delay: 1.5s;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: fadeIn;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 51px;
+  margin-bottom: 17px;
+  padding: 0 49px;
+}
+
+.default-btn {
+  background: #fc2c62;
+  border: 1px solid #fc2c62;
+  border-radius: 25px;
+  color: #ffffff;
+  display: inline-block;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 51px;
+  padding: 0 37px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.5s ease 0s;
+  cursor: pointer;
+}
+
+.single-slide {
+  background-image: url("https://htmldemo.net/jibon/jibon/img/slider/1.jpg");
+
+  animation-delay: 0.5s;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: fadeIn;
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  --bs-gutter-x: 30px;
+}
+
+.text-content-wrapper {
+  display: table;
+  position: relative;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,8 +1,49 @@
+<!-- <div
+  class="alert alert-danger"
+  role="alert"
+  *ngIf="
+    registerForm.get('name')?.hasError('required') &&
+    registerForm.get('name')?.touched
+  "
+>
+  Name is empty
+</div>
+
+<div
+  class="alert alert-danger"
+  role="alert"
+  *ngIf="
+    registerForm.get('email')?.hasError('required') &&
+    registerForm.get('email')?.touched
+  "
+>
+  Email is empty
+</div>
+<div
+  class="alert alert-danger"
+  role="alert"
+  *ngIf="
+    registerForm.get('password')?.hasError('required') &&
+    registerForm.get('password')?.touched
+  "
+>
+  Password is empty
+</div>
+<div
+  class="alert alert-danger"
+  role="alert"
+  *ngIf="
+    registerForm.get('reEnterPassword')?.hasError('required') &&
+    registerForm.get('reEnterPassword')?.touched
+  "
+>
+  Re-Eneter password
+</div> -->
+
 <div class="wrapper">
   <h2>Registration</h2>
   <form [formGroup]="registerForm">
-    <div class="input-box">
-      <input
+    <!-- <input
         type="text"
         [placeholder]="
           registerForm.get('name')?.hasError('required') &&
@@ -15,10 +56,17 @@
           registerForm.get('name')?.getError('required') &&
           registerForm.get('name')?.touched
         "
-      />
-    </div>
-    <div class="input-box">
+      /> -->
+    <div class="form-floating mb-3">
       <input
+        type="text"
+        class="form-control"
+        id="floatingInput"
+        placeholder="name@example.com"
+      />
+      <label for="floatingInput">Full Name</label>
+    </div>
+    <!-- <input
         type="text"
         [placeholder]="
           registerForm.get('email')?.hasError('required') &&
@@ -32,10 +80,17 @@
           registerForm.get('email')?.touched
         "
         required
-      />
-    </div>
-    <div class="input-box">
+      /> -->
+    <div class="form-floating mb-3">
       <input
+        type="email"
+        class="form-control"
+        id="floatingInput"
+        placeholder="name@example.com"
+      />
+      <label for="floatingInput">Email address</label>
+    </div>
+    <!-- <input
         type="password"
         [placeholder]="
           registerForm.get('password')?.hasError('required') &&
@@ -49,10 +104,17 @@
           registerForm.get('password')?.touched
         "
         required
-      />
-    </div>
-    <div class="input-box">
+      /> -->
+    <div class="form-floating mb-3">
       <input
+        type="password"
+        class="form-control"
+        id="floatingPassword"
+        placeholder="password"
+      />
+      <label for="floatingPassword">Password</label>
+    </div>
+    <!-- <input
         type="password"
         [placeholder]="
           registerForm.get('reEnterPassword')?.hasError('required') &&
@@ -66,8 +128,17 @@
           registerForm.get('reEnterPassword')?.touched
         "
         required
+      /> -->
+    <div class="form-floating mb-3">
+      <input
+        type="password"
+        class="form-control"
+        id="floatingPassword"
+        placeholder="password"
       />
+      <label for="floatingPassword">Re-Enter Password</label>
     </div>
+
     <div class="policy">
       <input type="checkbox" />
       <h3>I accept all terms & condition</h3>

@@ -11,6 +11,8 @@ import { FeatureComponent } from './feature/feature.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { DonateComponent } from './donate/donate.component';
+import { NewsComponent } from './news/news.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     RegisterComponent,
     HeaderComponent,
     FooterComponent,
+    DonateComponent,
+    NewsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule, ReactiveFormsModule],
   providers: [],

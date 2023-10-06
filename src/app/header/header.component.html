@@ -1,15 +1,15 @@
-<header
+<!-- <header
   class="d-flex flex-wrap justify-content-center py-3 mb-4 bg-dark border-bottom sticky-top"
 >
   <a
     href="/"
     class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-light text-decoration-none"
-  >
-    <!-- <svg class="bi me-2" width="40" height="32">
+  > -->
+<!-- <svg class="bi me-2" width="40" height="32">
       <use xlink:href="#bootstrap"></use>
     </svg> -->
 
-    <img
+<!-- <img
       class="bg-light"
       width="50"
       height="50"
@@ -37,10 +37,20 @@
       >
     </li>
     <li class="nav-item">
-      <a href="#" class="nav-link text-light">Donate</a>
+      <a
+        routerLink="/donate"
+        class="nav-link text-light"
+        [class.active]="isActive('/donate')"
+        >Donate</a
+      >
     </li>
     <li class="nav-item">
-      <a href="#" class="nav-link text-light">FAQs</a>
+      <a
+        routerLink="/news"
+        class="nav-link text-light"
+        [class.active]="isActive('/news')"
+        >News</a
+      >
     </li>
     <li class="nav-item">
       <button type="button" class="btn btn-primary" routerLink="/login">
@@ -48,4 +58,111 @@
       </button>
     </li>
   </ul>
+</header> -->
+
+<!-- New Header -->
+
+<header>
+  <div class="header-area">
+    <div class="header-top bg-them">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <span class="ht-header-msg"
+              ><i class="fa fa-envelope"></i>yourinfo@example.com</span
+            >
+            <span class="ht-header-msg"
+              ><i class="fa fa-phone"></i>+11 222 3333</span
+            >
+          </div>
+          <div class="col-md-6">
+            <div class="social-media float-end">
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+              <a href="#"><i class="fa fa-pinterest"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mainmenu-area header-sticky bg-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-4">
+          <div class="logo">
+            <img
+              class="logo-size"
+              src="assets/images/gender-equality.png"
+              alt="LOGO"
+            />
+          </div>
+        </div>
+        <div class="col-lg-9 col-md-8 d-none d-md-block">
+          <div class="menu-container">
+            <div class="menu-wrapper">
+              <div class="main-menu menu-menu">
+                <nav>
+                  <ul>
+                    <li class="active">
+                      <a href="index.html">Home</a>
+                      <!-- <ul>
+                        <li><a href="index.html">Home Version One</a></li>
+                        <li><a href="index-2.html">Home Version Two</a></li>
+                        <li><a href="index-3.html">Home Box Layout</a></li>
+                      </ul> -->
+                    </li>
+                    <li><a href="about.html">About</a></li>
+                    <li>
+                      <a href="event.html">Event</a>
+                      <!-- <ul>
+                        <li>
+                          <a href="event-details.html">Event Details</a>
+                        </li>
+                      </ul> -->
+                    </li>
+                    <li>
+                      <a href="cause.html">Cause</a>
+                      <!-- <ul>
+                        <li>
+                          <a href="cause-details.html">Cause Details</a>
+                        </li>
+                      </ul> -->
+                    </li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li>
+                      <a href="blog.html">Blog</a>
+                      <!-- <ul>
+                        <li><a href="blog-details.html">Blog Details</a></li>
+                      </ul> -->
+                    </li>
+                    <li>
+                      <a href="#">Pages</a>
+                      <!-- <ul>
+                        <li><a href="about.html">About Page</a></li>
+                        <li><a href="event.html">Event Page</a></li>
+                        <li>
+                          <a href="event-details.html">Event Details</a>
+                        </li>
+                        <li><a href="cause.html">Cause Page</a></li>
+                        <li>
+                          <a href="cause-details.html">Cause Details</a>
+                        </li>
+                        <li><a href="blog.html">Blog Page</a></li>
+                        <li><a href="blog-details.html">Blog Details</a></li>
+                        <li><a href="team.html">Team Page</a></li>
+                        <li><a href="contact.html">Contact Page</a></li>
+                      </ul> -->
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </header>

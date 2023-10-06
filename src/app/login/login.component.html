@@ -1,8 +1,29 @@
+<div
+  class="alert alert-danger"
+  role="alert"
+  *ngIf="
+    loginForm.get('email')?.hasError('required') &&
+    loginForm.get('email')?.touched
+  "
+>
+  Email is empty
+</div>
+
+<div
+  class="alert alert-danger"
+  role="alert"
+  *ngIf="
+    loginForm.get('password')?.hasError('required') &&
+    loginForm.get('password')?.touched
+  "
+>
+  password is empty
+</div>
+
 <div class="wrapper">
   <h2>Login</h2>
   <form [formGroup]="loginForm">
-    <div class="input-box">
-      <input
+    <!-- <input
         type="text"
         [placeholder]="
           loginForm.get('email')?.hasError('required') &&
@@ -16,10 +37,19 @@
           loginForm.get('email')?.touched
         "
         required
-      />
-    </div>
-    <div class="input-box">
+      /> -->
+
+    <div class="form-floating mb-3">
       <input
+        type="email"
+        class="form-control"
+        id="floatingInput"
+        placeholder="abc@xyz.com"
+      />
+      <label for="floatingInput">Email</label>
+    </div>
+
+    <!-- <input
         type="password"
         [placeholder]="
           loginForm.get('password')?.hasError('required') &&
@@ -32,7 +62,15 @@
           loginForm.get('password')?.hasError('required') &&
           loginForm.get('password')?.touched
         "
+      /> -->
+    <div class="form-floating">
+      <input
+        type="password"
+        class="form-control"
+        id="floatingPassword"
+        placeholder="Password"
       />
+      <label for="floatingPassword">Password</label>
     </div>
     <!-- <div class="policy">
       <input type="checkbox" />

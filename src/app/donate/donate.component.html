@@ -1,0 +1,49 @@
+<div class="wrapper">
+  <h2>Donate</h2>
+
+  <form [formGroup]="donationForm">
+    <div class="input-box">
+      <input
+        type="text"
+        [placeholder]="
+          donationForm.get('firstName')?.hasError('required') &&
+          donationForm.get('firstName')?.touched
+            ? 'First Name is required'
+            : 'First Name'
+        "
+        formControlName="firstName"
+        [class.validate-message]="
+          donationForm.get('firstName')?.getError('required') &&
+          donationForm.get('firstName')?.touched
+        "
+        required
+      />
+    </div>
+    <div class="input-box">
+      <input
+        type="text"
+        [placeholder]="
+          donationForm.get('lastName')?.hasError('required') &&
+          donationForm.get('lastName')?.touched
+            ? 'Last Name is required'
+            : 'Last Name'
+        "
+        formControlName="lastName"
+        [class.validate-message]="
+          donationForm.get('lastName')?.hasError('required') &&
+          donationForm.get('lastName')?.touched
+        "
+      />
+    </div>
+    <div class="policy">
+      <input type="checkbox" />
+      <h3>I accept all terms & condition</h3>
+    </div>
+    <div class="input-box button">
+      <input type="Submit" value="Login" />
+    </div>
+    <div class="text">
+      <h3>Don't have an account? <a routerLink="/register">Register now</a></h3>
+    </div>
+  </form>
+</div>

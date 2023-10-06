@@ -13,14 +13,14 @@ export class AppComponent {
   showHeader(): boolean {
     const currentRoute: any =
       this.activeRouter.snapshot.firstChild?.routeConfig?.path;
-    const routersWithHedar = ['home', 'features'];
+    const routersWithHedar = ['home', 'features', 'donate', 'news'];
     return !!currentRoute && routersWithHedar.includes(currentRoute);
   }
 
   showFooter(): boolean {
     const currentRoute =
       this.activeRouter.snapshot.firstChild?.routeConfig?.path;
-    const routersWithHedar = ['home', 'features'];
+    const routersWithHedar = ['home', 'features', 'donate', 'news'];
     return !!currentRoute && routersWithHedar.includes(currentRoute);
   }
 }
