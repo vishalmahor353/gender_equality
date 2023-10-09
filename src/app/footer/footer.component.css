@@ -1,0 +1,111 @@
+.bg-acquamarine {
+  background: #fc2c62;
+}
+.ht-donate-wrapper {
+  overflow: hidden;
+  padding: 50px 0 53px;
+}
+.donate-text {
+  float: left;
+}
+.donate-text h2 {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 14px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  color: #3e3e3e;
+}
+.donate-text > h5 {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 300;
+}
+.donate-btn {
+  float: right;
+  padding-top: 20px;
+}
+.donate-btn .default-btn {
+  background: #ffffff;
+  border-color: #ffffff;
+  color: #fc2c62;
+  line-height: 41px;
+  padding: 0 21px;
+}
+.default-btn {
+  background: #fc2c62;
+  border: 1px solid #fc2c62;
+  border-radius: 25px;
+  color: #ffffff;
+  display: inline-block;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 51px;
+  padding: 0 37px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.5s ease 0s;
+  cursor: pointer;
+}
+a,
+button,
+input {
+  outline: medium none;
+  color: #383838;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+a {
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+i {
+  color: #fc2c62;
+}
+.fa-google {
+  background: conic-gradient(
+      from -45deg,
+      #ea4335 110deg,
+      #4285f4 90deg 180deg,
+      #34a853 180deg 270deg,
+      #fbbc05 270deg
+    )
+    73% 55%/150% 150% no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+.fa.fa-instagram {
+  color: transparent;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  background: -webkit-radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+}

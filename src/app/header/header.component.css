@@ -128,7 +128,7 @@ ul {
   display: inline-block;
   font-size: 16px;
   font-weight: 600;
-  line-height: 110px;
+  /* line-height: 110px; */
   position: relative;
   text-transform: capitalize;
   transition: all 0.4s ease 0s;
@@ -152,6 +152,23 @@ ul {
 
 .main-menu > nav > ul > li > ul > li {
   display: block;
-  margin: 0;
-  padding: 0;
+  /* margin: 0; */
+  /* padding: 0; */
+}
+.default-btn {
+  /* padding: 0 37px; */
+  background: #fc2c62;
+  border: 1px solid #fc2c62;
+  border-radius: 25px;
+  color: #ffffff;
+  display: inline-block;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  /* line-height: 51px; */
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.5s ease 0s;
+  cursor: pointer;
 }
