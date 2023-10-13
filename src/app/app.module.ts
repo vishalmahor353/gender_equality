@@ -13,6 +13,8 @@ import { RegisterComponent } from './register/register.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { DonateComponent } from './donate/donate.component';
 import { NewsComponent } from './news/news.component';
+import { ContactComponent } from './contact/contact.component';
+import { EventComponent } from './event/event.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import { NewsComponent } from './news/news.component';
     FooterComponent,
     DonateComponent,
     NewsComponent,
+    ContactComponent,
+    EventComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule, ReactiveFormsModule],
   providers: [],

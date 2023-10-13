@@ -12,7 +12,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #4070f4;
+  background: #fc2c62;
 }
 
 .wrapper {
@@ -43,7 +43,7 @@ body {
   height: 3px;
   width: 28px;
   border-radius: 12px;
-  background: #4070f4;
+  background: #fc2c62;
 }
 
 .wrapper form {
@@ -71,7 +71,7 @@ form .input-box input {
 
 .input-box input:focus,
 .input-box input:valid {
-  border-color: #4070f4;
+  border-color: #fc2c62;
 }
 
 form .policy {
@@ -90,12 +90,12 @@ form h3 {
   color: #fff;
   letter-spacing: 1px;
   border: none;
-  background: #4070f4;
+  background: #fc2c62;
   cursor: pointer;
 }
 
 .input-box.button input:hover {
-  background: #0e4bf1;
+  background: #c9234e;
 }
 
 form .text h3 {
@@ -105,7 +105,7 @@ form .text h3 {
 }
 
 form .text h3 a {
-  color: #4070f4;
+  color: #fc2c62;
   text-decoration: none;
 }
 

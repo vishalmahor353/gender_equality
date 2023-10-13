@@ -24,22 +24,15 @@
 }
 .mainmenu-area {
   box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.16);
+  overflow: hidden;
 }
-/* .zmdi {
-  display: inline-block;
-  font: normal normal normal 14px/1 "Material-Design-Iconic-Font";
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-} */
+
 .header-sticky {
   animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
   background: #fff;
   box-shadow: 0 0 9.9px 0.1px rgba(91, 91, 91, 0.2);
   left: auto;
   padding: 0;
-  position: fixed;
   top: 0;
   width: 100%;
   z-index: 999;
@@ -48,6 +41,13 @@
 .social-media {
   padding: 10px 0;
 }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 .fa {
   color: #fff;
 }
@@ -98,9 +98,9 @@ a {
 .menu-container {
   float: right;
 }
-.menu-wrapper {
+/* .menu-wrapper {
   display: inline-block;
-}
+} */
 .main-menu {
   display: block;
   z-index: 2;
@@ -152,8 +152,6 @@ ul {
 
 .main-menu > nav > ul > li > ul > li {
   display: block;
-  /* margin: 0; */
-  /* padding: 0; */
 }
 .default-btn {
   /* padding: 0 37px; */
@@ -165,10 +163,16 @@ ul {
   font-family: "Lato", sans-serif;
   font-size: 14px;
   font-weight: 700;
-  /* line-height: 51px; */
+  line-height: 51px;
   position: relative;
   text-align: center;
   text-transform: uppercase;
   transition: all 0.5s ease 0s;
   cursor: pointer;
+}
+.default-btn:hover {
+  color: #fff !important;
+}
+.active-link {
+  color: #fc2c62;
 }

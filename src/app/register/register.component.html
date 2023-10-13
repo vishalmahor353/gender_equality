@@ -63,9 +63,21 @@
         class="form-control"
         id="floatingInput"
         placeholder="name@example.com"
+        formControlName="name"
       />
       <label for="floatingInput">Full Name</label>
+      <div
+        class="alert alert-danger"
+        role="alert"
+        *ngIf="
+          registerForm.get('name')?.hasError('required') &&
+          registerForm.get('name')?.touched
+        "
+      >
+        Name is empty
+      </div>
     </div>
+
     <!-- <input
         type="text"
         [placeholder]="

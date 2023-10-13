@@ -13,3 +13,13 @@ export class HeaderComponent {
     return this.router.url === route;
   }
 }
+
+window.onscroll = function () {
+  let navbar: any = document.getElementById('navbar');
+  let sticky = 10;
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add('sticky');
+  } else {
+    navbar.classList.remove('sticky');
+  }
+};

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
+import { contains, event } from 'jquery';
 
 @Component({
   selector: 'app-root',
@@ -13,14 +14,28 @@ export class AppComponent {
   showHeader(): boolean {
     const currentRoute: any =
       this.activeRouter.snapshot.firstChild?.routeConfig?.path;
-    const routersWithHedar = ['home', 'features', 'donate', 'news'];
+    const routersWithHedar = [
+      'home',
+      'features',
+      'donate',
+      'news',
+      'contact',
+      'event',
+    ];
     return !!currentRoute && routersWithHedar.includes(currentRoute);
   }
 
   showFooter(): boolean {
     const currentRoute =
       this.activeRouter.snapshot.firstChild?.routeConfig?.path;
-    const routersWithHedar = ['home', 'features', 'donate', 'news'];
+    const routersWithHedar = [
+      'home',
+      'features',
+      'donate',
+      'news',
+      'contact',
+      'event',
+    ];
     return !!currentRoute && routersWithHedar.includes(currentRoute);
   }
 }
