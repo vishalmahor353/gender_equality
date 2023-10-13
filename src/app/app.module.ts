@@ -15,6 +15,7 @@ import { DonateComponent } from './donate/donate.component';
 import { NewsComponent } from './news/news.component';
 import { ContactComponent } from './contact/contact.component';
 import { EventComponent } from './event/event.component';
+import { GalleryComponent } from './gallery/gallery.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { EventComponent } from './event/event.component';
     NewsComponent,
     ContactComponent,
     EventComponent,
+    GalleryComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule, ReactiveFormsModule],
   providers: [],

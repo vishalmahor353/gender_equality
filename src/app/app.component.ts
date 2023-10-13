@@ -21,6 +21,7 @@ export class AppComponent {
       'news',
       'contact',
       'event',
+      'gallery',
     ];
     return !!currentRoute && routersWithHedar.includes(currentRoute);
   }
@@ -35,6 +36,7 @@ export class AppComponent {
       'news',
       'contact',
       'event',
+      'gallery',
     ];
     return !!currentRoute && routersWithHedar.includes(currentRoute);
   }

@@ -8,6 +8,7 @@ import { DonateComponent } from './donate/donate.component';
 import { NewsComponent } from './news/news.component';
 import { ContactComponent } from './contact/contact.component';
 import { EventComponent } from './event/event.component';
+import { GalleryComponent } from './gallery/gallery.component';
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: 'news', component: NewsComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'event', component: EventComponent },
+  { path: 'gallery', component: GalleryComponent },
 ];
 
 @NgModule({
