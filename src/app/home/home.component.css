@@ -306,3 +306,90 @@ img {
   font-size: 14px;
   font-weight: 400;
 }
+
+
+.bg-1 {
+  background-image: url("https://htmldemo.net/jibon/jibon/img/bg/1.jpg");
+}
+.bg-1, .bg-2, .bg-3, .bg-4, .bg-5, .bg-6 {
+  background-attachment: scroll;
+  background-clip: initial;
+  background-color: rgba(0, 0, 0, 0);
+  background-origin: initial;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.ptb-120 {
+  padding: 120px 0;
+}
+
+.ht-join-text {
+  padding: 0 60px;
+  position: relative;
+  z-index: 1;
+}
+
+.ht-join-text > h4 {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  color: #3e3e3e;
+}
+
+.ht-join-text > h1 {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+}
+
+.ht-join-text > p {
+  color: #ffffff;
+  font-size: 17px;
+  line-height: 28px;
+  margin-bottom: 36px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 29px;
+}
+.ht-join-text .default-btn {
+  font-size: 12px;
+  line-height: 40px;
+  margin: 0 5px;
+  padding: 0 20px;
+}
+
+.default-btn.btn-white {
+  background: #fff;
+  color: #181818;
+  border-color: #fff;
+}
+
+.default-btn {
+  background: #fc2c62;
+  border: 1px solid #fc2c62;
+  border-radius: 25px;
+  color: #ffffff;
+  display: inline-block;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 51px;
+  padding: 0 20px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.5s ease 0s;
+  cursor: pointer;
+}

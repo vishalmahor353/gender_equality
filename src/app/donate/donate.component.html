@@ -1,53 +1,3 @@
-<!-- <div class="wrapper">
-  <h2>Donate</h2>
-
-  <form [formGroup]="donationForm">
-    <div class="input-box">
-      <input
-        type="text"
-        [placeholder]="
-          donationForm.get('firstName')?.hasError('required') &&
-          donationForm.get('firstName')?.touched
-            ? 'First Name is required'
-            : 'First Name'
-        "
-        formControlName="firstName"
-        [class.validate-message]="
-          donationForm.get('firstName')?.getError('required') &&
-          donationForm.get('firstName')?.touched
-        "
-        required
-      />
-    </div>
-    <div class="input-box">
-      <input
-        type="text"
-        [placeholder]="
-          donationForm.get('lastName')?.hasError('required') &&
-          donationForm.get('lastName')?.touched
-            ? 'Last Name is required'
-            : 'Last Name'
-        "
-        formControlName="lastName"
-        [class.validate-message]="
-          donationForm.get('lastName')?.hasError('required') &&
-          donationForm.get('lastName')?.touched
-        "
-      />
-    </div>
-    <div class="policy">
-      <input type="checkbox" />
-      <h3>I accept all terms & condition</h3>
-    </div>
-    <div class="input-box button">
-      <input type="Submit" value="Login" />
-    </div>
-    <div class="text">
-      <h3>Don't have an account? <a routerLink="/register">Register now</a></h3>
-    </div>
-  </form>
-</div> -->
-
 <div class="banner-area bg-4">
   <div class="container">
     <div class="breadcrumb-text">
@@ -65,6 +15,7 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-6">
+        <h3 class="sub-title">How You Can Donate.</h3>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia nam
         excepturi dolorum maxime quis veniam voluptatem ad pariatur? Atque
         exercitationem dolor quae ab minima commodi molestiae animi non nemo
@@ -74,7 +25,9 @@
         magni deserunt minima odit.
       </div>
       <div class="col-lg-6">
-        <form>
+        <div class="contact-form-wrapper fix">
+          <h3 class="sub-title">Give Little Donation</h3>
+          <form>
           <div class="form-floating mb-3">
             <input
               type="text"
@@ -82,7 +35,7 @@
               id="floatingInput"
               placeholder="Full Name"
             />
-            <label for="floatingPassword">Full Name</label>
+            <label for="floatingInput">Full Name</label>
           </div>
 
           <div class="form-floating mb-3">
@@ -94,6 +47,69 @@
             />
             <label for="floatingInput">Email</label>
           </div>
+
+          <div class="input-group mb-3">
+            <span class="input-group-text">₹</span>
+            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+            <span class="input-group-text">.00</span>
+          </div>
+
+          <div class="row">
+            <div class="col-md-9">
+                <div class="form-floating mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="floatingInput"
+                      placeholder="1234-4567-8976"
+                    />
+                    <label for="floatingInput">Card Number</label>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <img src="/assets/images/cardvisa.png" style="height: 80px; width: 100px;">
+            </div>
+        </div>
+
+
+
+          <div class="form-floating mb-3">
+            <input
+              type="text"
+              class="form-control"
+              id="floatingInput"
+              placeholder="Cardholder's Name"
+            />
+            <label for="floatingInput">Cardholder's Name</label>
+          </div>
+          
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="floatingInput"
+                    placeholder="Expiration Date"
+                  />
+                  <label for="floatingInput">Expiration Date</label>
+                </div>
+              </div>
+    
+              <div class="col-md-6">
+                
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="floatingPassword"
+                  placeholder="CVV"
+                />
+                <label for="floatingPassword">CVV</label>
+              </div>
+    
+              </div>
+            </div>
           <div class="form-floating mb-3">
             <textarea
               class="form-control"
@@ -107,7 +123,7 @@
           <div class="banner-btn">
             <a class="default-btn" href="https://goo.gl/HtFL2a">Submit</a>
           </div>
-        </form>
+        </form></div>
       </div>
     </div>
   </div>

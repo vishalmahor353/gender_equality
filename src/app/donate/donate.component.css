@@ -91,3 +91,48 @@ a {
 .ptb-120 {
   padding: 120px 0;
 }
+
+
+.banner-btn .default-btn {
+  animation-delay: 1.5s;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: fadeIn;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 37px;
+  margin-bottom: 17px;
+  padding: 0 46px;
+}
+
+.default-btn {
+  background: #fc2c62;
+  border: 1px solid #fc2c62;
+  border-radius: 25px;
+  color: #ffffff;
+  display: inline-block;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 51px;
+  padding: 0 20px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.5s ease 0s;
+  cursor: pointer;
+}
+
+.sub-title {
+  font-weight: 400;
+  line-height: 18px;
+  padding-bottom: 29px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  color: #3e3e3e;
+}
