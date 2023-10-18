@@ -99,22 +99,6 @@ a {
   margin-right: auto;
   margin-left: auto;
 }
-/* .row {
-  --bs-gutter-x: 30px;
-}
-@media (min-width: 992px) {
-  .col-lg-7 {
-    flex: 0 0 auto;
-    width: 58.33333333%;
-  }
-}
-
-@media (min-width: 992px) {
-  .col-lg-5 {
-    flex: 0 0 auto;
-    width: 41.66666667%;
-  }
-} */
 
 .row > * {
   flex-shrink: 0;
