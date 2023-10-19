@@ -88,6 +88,8 @@ a {
 }
 .logo {
   padding: 30px 0;
+  display: flex;
+
 }
 .logo-size {
   width: 50px;

@@ -124,15 +124,23 @@ a {
   cursor: pointer;
 }
 
-.sub-title {
-  font-weight: 400;
-  line-height: 18px;
-  padding-bottom: 29px;
-}
+
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   margin: 0;
   padding: 0;
   color: #3e3e3e;
+}
+.contact-form-wrapper {
+  padding-right: 35px;
+}
+
+.fix {
+  overflow: hidden;
+}
+.sub-title {
+  font-weight: 400;
+  line-height: 18px;
+  padding-bottom: 29px;
 }
